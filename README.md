@@ -10,7 +10,7 @@
 
 # Timbr Node JDBC Connector Module
 
-This project provides a Node.js module to connect to a Timbr instance (using its Hive interface) via JDBC. It wraps the `timbr-node-jdbc` package to offer a simplified, Promise-based interface for connecting and executing queries.
+This project provides a Node.js module to connect to a Timbr instance (using its Hive interface) via JDBC. It wraps the [node-jdbc-driver](https://github.com/jaynath-d/node-jdbc-driver) package to offer a simplified, Promise-based interface for connecting and executing queries.
 
 ## Installation
 
