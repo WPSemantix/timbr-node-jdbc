@@ -1,6 +1,24 @@
-# Timbr Node JDBC Connector Module (using timbr-node-jdbc)
+![Timbr logo description](https://timbr.ai/wp-content/uploads/2023/06/timbr-ai-l-5-226x60-1.png)
+
+<!-- Badges -->
+![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen?logo=nodedotjs)
+![NPM](https://img.shields.io/npm/v/timbr-node-jdbc?color=cb3837&label=npm%20package%20version&logo=npm)
+	<a href="https://img.shields.io/badge/dependencies-up--to--date-brightgreen.svg"><img src="https://img.shields.io/badge/dependencies-up--to--date-brightgreen.svg" alt="Dependencies upto date"></a>
+	<a href="https://img.shields.io/badge/status-stable-brightgreen.svg"><img src="https://img.shields.io/badge/status-stable-brightgreen.svg" alt="Status"></a>
+
+---
+
+# Timbr Node JDBC Connector Module
 
 This project provides a Node.js module to connect to a Timbr instance (using its Hive interface) via JDBC. It wraps the `timbr-node-jdbc` package to offer a simplified, Promise-based interface for connecting and executing queries.
+
+## Installation
+
+Install the package using npm:
+
+```bash
+npm install timbr-node-jdbc
+```
 
 ## Prerequisites
 
@@ -39,11 +57,10 @@ timbr-node-jdbc
 
 ## Usage
 
-Import the module and create a connector instance by providing connection options. Use `async/await` or Promise chains to handle the asynchronous operations.
+After installing, import the module and create a connector instance by providing connection options. Use `async/await` or Promise chains to handle the asynchronous operations.
 
 ```javascript
-// In your application file (e.g., index.js or test.js)
-const createTimbrConnector = require('./index'); // Adjust path if needed
+const createTimbrConnector = require('timbr-node-jdbc');
 
 // --- Required Options ---
 const options = {
@@ -115,7 +132,3 @@ runQuery();
     -   Returns: `Promise<Array>` - Resolves with an array of row objects on success, rejects on error.
 -   **`connector.close()`**: Closes the database connection.
     -   Returns: `Promise<void>` - Resolves on success, rejects on error.
-
-## License
-
-[MIT License](./LICENSE)
