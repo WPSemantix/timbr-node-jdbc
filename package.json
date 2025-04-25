@@ -1,0 +1,34 @@
+{
+  "name": "timbr-node-jdbc",
+  "version": "1.0.0",
+  "description": "Node JS Connector to Timbr Semantic Layer via JDBC",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "node-jdbc-driver": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WPSemantix/timbr-node-jdbc.git"
+  },
+  "keywords": [
+    "timbr",
+    "node",
+    "jdbc",
+    "connector",
+    "semantic",
+    "layer",
+    "knowledge",
+    "graph",
+    "sql",
+    "ontology"
+  ],
+  "author": "Timbr.ai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WPSemantix/timbr-node-jdbc/issues"
+  },
+  "homepage": "https://github.com/WPSemantix/timbr-node-jdbc#readme"
+}
